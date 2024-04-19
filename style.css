@@ -11,3 +11,76 @@ body {
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
   }
+  :root {
+    --cor-base: #ff6347;
+  }
+  :root {
+    --cor-fundo: #CCCCCC;
+}
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+<h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
+.titulo-principal span {
+    color: var(--verde);
+}
+.botao {
+    font-family: "Crakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo); 
+    border-left: 2px solid var(--botao-ativo); 
+    border-right: 2px solid var(--botao-ativo); 
+    border-top: none;
+    .botoes {
+        display: block;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .botoes {
+            display: flex;
+        }
+        .botao:first-child {
+            border-radius: 40px 40px 0 0;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .botoes {
+                display: flex;
+            }
+        
+            .botao:first-child {
+                border-radius: 40px 0 0 0;
+            }
+        
+            .botao:last-child {
+                border-radius: 0 40px 0 0;
+            }
+        }
+        <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <h2 class="titulo-principal">Escola de Tecnologia<span>_</span></h2>
+    <div class="botoes">
+        <button class="botao">Nossos cursos</button>
+        <button class="botao">Quem somos?</button>
+    </div>
